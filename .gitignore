@@ -1,0 +1,3 @@
+**/sim_data/**/*.txt
+**/sim_data/**/*.json
+**/generated/**/*.*
