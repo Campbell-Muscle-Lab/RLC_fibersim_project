@@ -48,18 +48,19 @@ There are 4 conditions:
 All the figures are in a folder structure under `<project_repo>/sim_data`
 
 The rate diagram is
+![rates](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/68934158-7bda-4a84-bfcc-c9c78fbf2536)
 
-<img src="sim_data/force_pCa/sim_output/rates.png" width=50%>
 
 Summary files are as follows
 
-<img src="sim_data/force_pCa/sim_output/superposed_traces.png" width=50%>
+![force_pCa](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/2cf210bd-bff3-4737-afac-33f02f62d5a0)
+![k_tr_analysis](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/5869633d-c6d5-4288-af32-59c1720d4a97)
+![superposed_traces](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/b32967eb-6118-4182-bad5-75cbffa74cdc)
 
-<img src="sim_data/force_pCa/sim_output/force_pCa.png" width=50%>
+![fv_and_power](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/4dac15ee-3f8d-46eb-8fc2-01794fd6f1a4)
+![superposed_traces](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/3d76a29d-1cca-4f27-a783-1bd83ccbd4d1)
+![fv_traces_1](https://github.com/Campbell-Muscle-Lab/RLC_fibersim_project/assets/145811350/61e3754e-62a0-477d-a207-36026879f8f7)
 
-<img src="sim_data/force_pCa/sim_output/k_tr_analysis.png" width=50%>
-
-<img src="sim_data/fv_pCa45/isotonic/sim_output/fv_and_power.png" width="50%">
 
 
 ### Setup file
