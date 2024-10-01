@@ -65,61 +65,125 @@
     {
       "state": [
         {
-            "number": 1,
-            "type": "D",
-            "extension": 0,
-            "transition":
-            [
-                {
-                    "new_state": 2,
-                    "rate_type": "gaussian",
-                    "rate_parameters": [ 100]
-                }
-            ]
+          "number": 1,
+          "type": "S",
+          "extension": 0,
+          "transition": [
+            {
+              "new_state": 2,
+              "rate_type": "force_and_mybpc_dependent",
+              "rate_parameters": [10, 100, 1, 1, 1, 1, 1, 1]
+            }
+          ]
         },
         {
-            "number": 2,
+          "number": 2,
+          "type": "D",
+          "extension": 0,
+          "transition": [
+            {
+              "new_state": 1,
+              "rate_type": "constant",
+              "rate_parameters": [ 50 ]
+            },
+            {
+              "new_state": 3,
+              "rate_type": "gaussian_hsl",
+              "rate_parameters": [ 60 ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "type": "A",
+          "extension": 0.0,
+          "transition": [
+            {
+              "new_state": 2,
+              "rate_type": "poly",
+              "rate_parameters": [ 75, 10, 4]
+            },
+            {
+                "new_state": 4,
+                "rate_type": "constant",
+                "rate_parameters": [ 75 ]
+              }
+          ]
+        },
+        {
+            "number": 4,
             "type": "A",
-            "extension": 5,
-            "transition":
-            [
-                {
-                    "new_state": 1,
-                    "rate_type": "exp_wall",
-                    "rate_parameters": [100, 1.5, 3, 7]
-                }
+            "extension": 5.0,
+            "transition": [
+              {
+                "new_state": 2,
+                "rate_type": "exp_wall",
+                "rate_parameters": [75, 0.5, 4, 7]
+              }
             ]
-        }
-      ]
-    },
+          }
+        ]
+      },
     {
         "state": [
           {
-              "number": 1,
-              "type": "D",
-              "extension": 0,
-              "transition":
-              [
-                  {
-                      "new_state": 2,
-                      "rate_type": "gaussian",
-                      "rate_parameters": [ 10]
-                  }
-              ]
+            "number": 1,
+            "type": "S",
+            "extension": 0,
+            "transition": [
+              {
+                "new_state": 2,
+                "rate_type": "force_and_mybpc_dependent",
+                "rate_parameters": [10, 100, 1, 1, 1, 1, 1, 1]
+              }
+            ]
           },
           {
-              "number": 2,
+            "number": 2,
+            "type": "D",
+            "extension": 0,
+            "transition": [
+              {
+                "new_state": 1,
+                "rate_type": "constant",
+                "rate_parameters": [ 50 ]
+              },
+              {
+                "new_state": 3,
+                "rate_type": "gaussian_hsl",
+                "rate_parameters": [ 60 ]
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "type": "A",
+            "extension": 0.0,
+            "transition": [
+              {
+                "new_state": 2,
+                "rate_type": "poly",
+                "rate_parameters": [ 75, 10, 4]
+              },
+              {
+                  "new_state": 4,
+                  "rate_type": "constant",
+                  "rate_parameters": [ 75 ]
+                }
+            ]
+          },
+          {
+              "number": 4,
               "type": "A",
-              "extension": 5,
-              "transition":
-              [
-                  {
-                      "new_state": 1,
-                      "rate_type": "exp_wall",
-                      "rate_parameters": [10, 1.5, 3, 7]
-                  }
+              "extension": 5.0,
+              "transition": [
+                {
+                  "new_state": 2,
+                  "rate_type": "exp_wall",
+                  "rate_parameters": [75, 0.5, 4, 7]
+                }
               ]
-          }
+            }
         ]
       }
   ],
