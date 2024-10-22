@@ -18,7 +18,7 @@
             "state": 1, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1, 2 ],
+            "multipliers": [ 1.0, 1.3, 1.5, 1.5 ],
             " output-type": "float"
           }, 
           {
@@ -27,7 +27,7 @@
             "state": 1, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1, 1 ],
+            "multipliers": [ 1.0, 1.0, 1.0, 1.5 ],
             " output-type": "float"
           } 
         ]
@@ -39,11 +39,16 @@
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
         "hs_lengths": [950, 1150],
-        "m_n": 4,
-        "pCa_values": [9, 8, 7, 6.5, 6.3, 6.1, 5.9, 5.7, 5.5, 5.3, 5.0, 4.5],
-        "sim_duration_s": 0.5,
+        "m_n": 24,
+        "pCa_values": [9.0, 8.0, 7.0, 6.5, 6.3, 6.1, 5.9, 5.7, 5.5, 5.3, 5.0, 4.5],
+        "sim_duration_s": 4.0,
         "time_step_s": 0.001,
-        "pCa_step_up_s": 0.1,
+        "pCa_step_up_s": 0.05,
+        "k_tr_start_s": 2.0,
+        "k_tr_duration_s": 0.02,
+        "k_tr_ramp_s": 0.001,
+        "k_tr_magnitude_nm": 100,
+        "k_tr_fit_time_s": [2.025, 3.995],
         "output_image_formats": [ "png" ],
         "figures_only": "False",
         "trace_figures_on": "True",
