@@ -4,7 +4,7 @@ function figure_force_pCa_curves
 
 %Variables
 addpath(genpath('../../MATLAB_Utilities'))
-sim_data_folder = '../Simulations/specific_molecules/sim_data/sim_output'
+sim_data_folder = '../sim_data/sim_output/1'
 output_image_file = '../output/pCa_curves';
 output_image_types ={'png', 'svg', 'eps'};
 f_scaling_factor = 0.001;
@@ -29,8 +29,8 @@ for file_counter = 1 : numel(data_file);
     d = readtable(data_file{file_counter});
     l = d.m_length(1);
     ix = [];
-    for i = 1 : 2
-        ix(i) = find(d.m_length == 1, 1,'last');
+    for i = 1 : 3
+        ix(i) = find(d.m_length == l, 1,'last');
         summary.pCa(m) = d.hs_1_pCa(1);
         summary.hsl(m) = l;
         summary.force(m) = d.m_force(ix(i));

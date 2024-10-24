@@ -18,7 +18,7 @@
             "state": 1, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1.0, 1.3, 1.5, 1.5 ],
+            "multipliers": [ 1.0,  2.0, 2.0 ],
             " output-type": "float"
           }, 
           {
@@ -27,7 +27,43 @@
             "state": 1, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1.0, 1.0, 1.0, 1.5 ],
+            "multipliers": [ 1.0, 0.01, 0.01 ],
+            " output-type": "float"
+          }, 
+          { 
+            "variable": "m_kinetics",
+            "isotype": 1,
+            "state": 4, 
+            "transition": 1,
+            "parameter_number": 1,
+            "multipliers": [ 1.0,  0.5, 0.5 ],
+            " output-type": "float"
+          }, 
+          {
+            "variable": "m_kinetics",
+            "isotype": 2,
+            "state": 4, 
+            "transition": 1,
+            "parameter_number": 1,
+            "multipliers": [ 1.0,  0.5, 0.5 ],
+            " output-type": "float"
+          }, 
+          { 
+            "variable": "m_kinetics",
+            "isotype": 1,
+            "state": 2, 
+            "transition": 2,
+            "parameter_number": 1,
+            "multipliers": [ 1.0,  1.0, 2.0 ],
+            " output-type": "float"
+          }, 
+          {
+            "variable": "m_kinetics",
+            "isotype": 2,
+            "state": 2, 
+            "transition": 2,
+            "parameter_number": 1,
+            "multipliers": [ 1.0,  1.0, 0.5 ],
             " output-type": "float"
           } 
         ]
@@ -39,7 +75,7 @@
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
         "hs_lengths": [950, 1150],
-        "m_n": 24,
+        "m_n": 4,
         "pCa_values": [9.0, 8.0, 7.0, 6.5, 6.3, 6.1, 5.9, 5.7, 5.5, 5.3, 5.0, 4.5],
         "sim_duration_s": 4.0,
         "time_step_s": 0.001,
