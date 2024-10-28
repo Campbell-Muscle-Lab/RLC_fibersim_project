@@ -10,7 +10,11 @@ output_image_file = '../output/pCa_curves';
 output_image_types = {'png', 'svg', 'eps'};
 conditions_to_draw =  [1, 2, 5, 6]
 
-f_sacaling_factor = 0.001
+f_scaling_factor = 0.001;
+y_label_offset = -0.1;
+title_y_offset = 0.1;
+x_label_offset = 0.1;
+buffer = 20 ;
 
 % Display 
 color_map = [1 0 0.2 ; 0.5 0.6 1 ; 0 0 1 ; 0.4 0.7 0.9 ; ...
@@ -18,7 +22,7 @@ color_map = [1 0 0.2 ; 0.5 0.6 1 ; 0 0 1 ; 0.4 0.7 0.9 ; ...
 
 % Code 
 
-% Figure 
+% Figure layout
 no_of_cols = 1
 no_of_rows = 1 
 
@@ -44,6 +48,7 @@ for cond_counter = 1: numel(conditions_to_draw)
     sim_files = findfiles('txt', cond_data_folder)';
 
     % Loop through and read the files
+  
     for sim_counter = 1 : numel(sim_files);
         d = readtable(sim_files{sim_counter});
         l = d.m_length(1)
@@ -52,7 +57,8 @@ for cond_counter = 1: numel(conditions_to_draw)
             ix(i) = find(d.m_length == l, 1,'last');
             summary.pCa(1) = d.hs_1_pCa(1);
             summary.hsl(1) = l
-            summary.force(1) = d.m_force(ix(i));
+            summary.force(1) = d.m_force(ix(i))
+           
         end
     end 
 end
@@ -65,8 +71,43 @@ for hsl_counter = 1 : numel(hsl_values)
 
     pd(hsl_counter).pCa = summary.pCa(vi)
     pd(hsl_counter).y = f_scaling_factor*summary.force(vi)
+    pd(hsl_counter).y_error = 0*pd(hsl_counter).y
 
+   [pCa50(hsl_counter),n(hsl_counter),~,~,~, pd(hsl_counter).x_fit,...
+       pd(hsl_counter).y_fit] = ...
+        fit_Hill_curve(pd(hsl_counter).pCa, pd(hsl_counter).y);
+  
 end 
+
+% Make a figure 
+pCa50
+n
+figure(1);
+clf;
+
+h = plot_pCa_data_with_y_errors(pd,...
+'y_axis_off', 0, ...
+'y_axis_label', {'Force','(kN m^{-2})'}, ...
+'x_label_offset',-0.13, ...
+'y_label_offset', y_label_offset, ...
+'marker_size', 12,...
+'marker_face_colors', color_map, ...
+'y_axis_offset', -0.03, ...
+'title_y_offset', title_y_offset, ...
+'title_font_weight', 'bold')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

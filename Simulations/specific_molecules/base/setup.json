@@ -18,7 +18,7 @@
             "state": 1, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1.0,  2.0, 2.0 ],
+            "multipliers": [ 1.0, 2.0 ],
             " output-type": "float"
           }, 
           {
@@ -27,7 +27,7 @@
             "state": 1, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1.0, 0.01, 0.01 ],
+            "multipliers": [ 1.0, 0.01 ],
             " output-type": "float"
           }, 
           { 
@@ -36,7 +36,7 @@
             "state": 4, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1.0,  0.5, 0.5 ],
+            "multipliers": [ 1.0, 0.5 ],
             " output-type": "float"
           }, 
           {
@@ -45,7 +45,7 @@
             "state": 4, 
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [ 1.0,  0.5, 0.5 ],
+            "multipliers": [ 1.0, 0.5 ],
             " output-type": "float"
           }, 
           { 
@@ -54,7 +54,7 @@
             "state": 2, 
             "transition": 2,
             "parameter_number": 1,
-            "multipliers": [ 1.0,  1.0, 2.0 ],
+            "multipliers": [ 1.0, 2.0 ],
             " output-type": "float"
           }, 
           {
@@ -63,7 +63,7 @@
             "state": 2, 
             "transition": 2,
             "parameter_number": 1,
-            "multipliers": [ 1.0,  1.0, 0.5 ],
+            "multipliers": [ 1.0, 0.5 ],
             " output-type": "float"
           } 
         ]
