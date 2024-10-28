@@ -6,12 +6,12 @@ function figure_force_pCa_curves
 addpath(genpath('../../MATLAB_Utilities'))
 num_of_folders = 6; % you can always use functions to do this bit programmatically
 output_image_file = '../output/pCa_curves';
-output_image_types ={'png'};
-% f_scaling_factor = 0.001;
+output_image_types ={'png', 'svg', 'eps'};
+f_scaling_factor = 0.001;
 y_label_offset = -0.1;
 title_y_offset = 0.1;
 x_label_offset = 0.1;
-buffer = 15 ;
+buffer = 20 ;
 
 color_map = ['#1f77b4' ; '#ff7f0e' ; '#2ca02c' ; '#d62728' ; '#9467bd' ; ...
     '#8c564b'; '#e377c2';'#7f7f7f'; '#bcbd22'; '#17becf']
@@ -31,21 +31,24 @@ for folder_counter = 1 : num_of_folders
     for file_counter = 1 : numel(data_file);
         d = readtable(data_file{file_counter});
         l = d.m_length(1);
-        [~,k_tr_step] = min(diff(d.m_length))
-        summary.pCa(file_counter) = d.hs_1_pCa(k_tr_step-1)
+        ix = [];
+        ix = find(d.m_length == l, 1,'last')
+        figure(2)
+        plot(diff())
+        summary.pCa(file_counter) = d.hs_1_pCa(ix)
         summary.hsl(file_counter) = l;
-        summary.force(file_counter) = d.m_force(k_tr_step-1);
+        summary.force(file_counter) = d.m_force(ix);
     end
 
 
     summary
     %Find values for plot
-    hsl_values(folder_counter) = unique(summary.hsl)
+    hsl_values = unique(summary.hsl)
 
-    vi = find(summary.hsl == hsl_values(folder_counter))
+    vi = find(summary.hsl == hsl_values);
 
     pd(folder_counter).pCa = summary.pCa(vi)
-    pd(folder_counter).y = summary.force(vi)/(max(summary.force(vi)))
+    pd(folder_counter).y = f_scaling_factor*summary.force(vi)
     pd(folder_counter).y_error = 0 * pd(folder_counter).y;
 
     [pCa50(folder_counter),n(folder_counter),~,~,~, pd(folder_counter).x_fit, pd(folder_counter).y_fit] = ...
@@ -57,14 +60,13 @@ end
 pCa50
 n
 figure(1);
-clf
 pd
 h = plot_pCa_data_with_y_errors(pd,...
     'y_axis_off', 0, ...
-    'y_axis_label', {'Normalized','force'}, ...
+    'y_axis_label', {'Force','(kN m^{-2})'}, ...
     'x_label_offset',-0.13, ...
     'y_label_offset', y_label_offset, ...
-    'marker_size', 9,...
+    'marker_size', 12,...
     'marker_face_colors', color_map, ...
     'y_axis_offset', -0.03, ...
     'title_y_offset', title_y_offset, ...
@@ -72,16 +74,16 @@ h = plot_pCa_data_with_y_errors(pd,...
 
 %Make a legend
 
-for i = 1:size(pd,2)
-    leg_labels{i} = sprintf('hsl = %.f, pCa_5_0 = %.2f, n_h = %.2f',hsl_values(i),pCa50(i),n(i))
+for i = 1:numel(hsl_values)
+    leg_labels{i} = sprintf('hsl =%.f, pCa50 = %.3f, n_h = %.3f',hsl_values(i),pCa50(i),n(i))
 end
 
 legendflex(h, leg_labels, ...
-    'xscale',0.85, ...
+    'xscale',1, ...
     'anchor',{'nw','nw'}, ...
-    'buffer',[buffer 0], ...
+    'buffer',[buffer 10], ...
     'padding',[1 1 2], ...
-    'FontSize',8, ...
+    'FontSize',11, ...
     'text_y_padding', -5);
 % Output
 for type_counter = 1 : numel(output_image_types)
