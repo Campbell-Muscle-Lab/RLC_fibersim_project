@@ -2,7 +2,7 @@
   "FiberSim_setup": {
     "FiberCpp_exe": {
       "relative_to": "this_file",
-      "exe_file": "C:/caterina/GitHub/FiberSim/bin/FiberCpp.exe"
+      "exe_file": "E:/caterina/GitHub/FiberSim/bin/FiberCpp.exe"
     },
     "model":
     {
