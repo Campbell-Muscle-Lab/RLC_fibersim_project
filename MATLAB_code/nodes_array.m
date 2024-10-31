@@ -1,16 +1,22 @@
 function nodes_array 
 % Function create an array for the nodes in FiberSim 
 
-% Code
-
+% Variables
 v = [1;2]
 v1 = [1;1]
 
-a = repmat(v, 10, 1)'
-b = repmat(v1,10,1)'
+% Code
 
-array = [a,b]
+% Define zones
+p_zone = repmat(v1, 63, 1)'
+c_zone = repmat(v1,75,1)'
+d_zone = repmat(v, 24, 1)'
 
+% Create a vector 
+vector = [p_zone c_zone d_zone]
+
+% Make a json format string 
+array = jsonencode([vector])
 
  
 
