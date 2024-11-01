@@ -44,7 +44,7 @@
     "characterization": 
       {
         "relative_to":"this_file",
-        "m_n": 100,
+        "m_n": 9,
         "hs_lengths": [950, 1150],
         "sim_folder":"../sim_data",
         "output_image_formats": ["png"],
