@@ -44,11 +44,11 @@
     "a_k_coop": 10
   },
   "thick_parameters": {
-    "m_k_stiff": 2 },
+    "m_k_stiff": 5 },
   "titin_parameters": {
     "t_passive_mode": "linear",
-    "t_k_stiff": 6e-6,
-    "t_slack_length": 0
+    "t_k_stiff": 4e-6,
+    "t_slack_length": 600
   },
   "extracellular_parameters": {
     "e_passive_mode": "exponential",
@@ -71,7 +71,7 @@
             {
               "new_state": 2,
               "rate_type": "force_dependent",
-              "rate_parameters": [ 20, 100 ]
+              "rate_parameters": [ 50, 100 ]
             }
           ]
         },
@@ -80,6 +80,11 @@
           "type": "D",
           "extension": 0,
           "transition": [
+            {
+              "new_state": 1,
+              "rate_type": "constant",
+              "rate_parameters": [ 50 ]
+            },
             {
               "new_state": 3,
               "rate_type": "gaussian_hsl",
@@ -137,6 +142,11 @@
           "type": "D",
           "extension": 0,
           "transition": [
+            {
+              "new_state": 1,
+              "rate_type": "constant",
+              "rate_parameters": [ 50 ]
+            },
             {
               "new_state": 3,
               "rate_type": "gaussian_hsl",

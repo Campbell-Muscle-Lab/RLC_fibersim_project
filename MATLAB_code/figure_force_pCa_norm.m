@@ -6,10 +6,10 @@ function figure_force_pCa_norm
 addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
-sim_data_folder = '../Simulations/specific_molecules/sim_data/uniform/sim_output';
-output_image_file = '../output/pCa_curves_uniform_fastnorm';
+sim_data_folder = '../Simulations/specific_molecules/sim_data/sim_output';
+output_image_file = '../output/pCa_curves_CZone_3state';
 output_image_types = {'png', 'svg', 'eps'};
-conditions_to_draw =  [1, 2, 5, 6]
+conditions_to_draw =  [1, 2, 3, 4]
 
 f_scaling_factor = 0.001;
 y_label_offset = -0.05;
