@@ -18,7 +18,7 @@ x_label_offset = 0.1;
 buffer = 20 ;
 
 % Display 
- color_map = [0.8 0 1 ; 1 0.6 0 ; 0.8 0 1; 1 0.6 0; ...
+ color_map = [0.8 0 1 ; 0.8 0 1  ; 1 0.6 0 ; 1 0.6 0; ...
              1 0.7 0.3 ; 0.8 0 1; 0 0.8 0.8]
 
 
@@ -54,12 +54,10 @@ for cond_counter = 1: numel(conditions_to_draw)
     for sim_counter = 1 : numel(sim_files);
         d = readtable(sim_files{sim_counter});
         l = d.m_length(1)
-          [~,k_tr_step] = min(diff(d.m_length));
-        summary.pCa(sim_counter) = d.hs_1_pCa(k_tr_step-1);
+          [~,k_tr_step] = min(diff(d.m_length))
+        summary.pCa(sim_counter) = d.hs_1_pCa(k_tr_step-1)
         summary.hsl(sim_counter) = l;
         summary.force(sim_counter) = d.m_force(k_tr_step-1);
-      
-        
     end 
 
      summary
@@ -70,6 +68,7 @@ for cond_counter = 1: numel(conditions_to_draw)
 
     pd(cond_counter).pCa = summary.pCa(vi)
     pd(cond_counter).y = summary.force(vi)/(max(summary.force(vi)))
+    pd(cond_counter).y = mean(summary.force(vi/max(summary.force(vi))))
     pd(cond_counter).y_error = 0 * pd(cond_counter).y;
 
     [pCa50(cond_counter),n(cond_counter),~,~,~, pd(cond_counter).x_fit, pd(cond_counter).y_fit] = ...

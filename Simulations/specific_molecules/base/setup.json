@@ -30,6 +30,25 @@
             "transition": 1, 
             "parameter_number": 1, 
             "multipliers": [ 0.01, 2.0],
+            
+            "output_type": "float"
+          },
+          {
+            "variable": "m_kinetics",
+            "isotype": 1, 
+            "state": 1, 
+            "transition": 1, 
+            "parameter_number": 2, 
+            "multipliers": [ 1.0, 1.5],
+            "output_type": "float"
+          },
+          {
+            "variable": "m_kinetics",
+            "isotype": 2, 
+            "state": 1, 
+            "transition": 1, 
+            "parameter_number": 2, 
+            "multipliers": [ 1.0, 1.5],
             "output_type": "float"
           }
         ]
@@ -40,7 +59,8 @@
         "type": "pCa_length_control",
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
-        "m_n": 49,
+        "m_n": 4,
+        "randomized_repeats": 5, 
         "hs_lengths": [950, 1150],
         "pCa_values": [9, 6.5, 6.3, 6.1, 5.9, 5.7, 5.5, 5.3, 5.0, 4.5],
         "sim_duration_s": 4.0,
