@@ -6,8 +6,8 @@ function fit_Hill_curves_to_simulation_repeats
 addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
-pCa_analysis_file = '../test_data/pCa_analysis.xlsx';
-output_file = '../test_data/Hill_curve_repeats.xlsx';
+pCa_analysis_file = '../Simulations/specific_molecules/sim_data/sim_output/pCa_analysis.xlsx';
+output_file = '../output/Hill_curve_repeats.xlsx';
 
 % Read excel sheet 
 d = readtable(pCa_analysis_file)
