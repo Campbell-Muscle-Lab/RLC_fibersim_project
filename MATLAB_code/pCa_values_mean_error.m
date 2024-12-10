@@ -6,7 +6,7 @@ addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
 xls_file = '../Simulations/specific_molecules/sim_data/sim_output/pCa_analysis.xlsx';
-output_image_file = '../output/pCa_curves_all_fil';
+output_image_file = '../output/new_trial';
 output_image_types = {'png', 'svg', 'eps'};
 
 % Display 
@@ -107,11 +107,11 @@ legendflex(h, leg_labels, ...
     'text_y_padding', -5);
 
 % Output
-% for type_counter = 1 : numel(output_image_types)
-%     figure_export( ...
-%         'output_file_string', output_image_file, ...
-%         'output_type', output_image_types{type_counter});
-% end
+for type_counter = 1 : numel(output_image_types)
+    figure_export( ...
+        'output_file_string', output_image_file, ...
+        'output_type', output_image_types{type_counter});
+end
 
 
 
