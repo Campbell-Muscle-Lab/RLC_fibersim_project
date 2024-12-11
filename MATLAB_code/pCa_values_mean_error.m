@@ -5,8 +5,8 @@ function pCa_values_mean_error
 addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
-xls_file = '../Simulations/specific_molecules/sim_data/sim_output/pCa_analysis.xlsx';
-output_image_file = '../output/new_trial';
+xls_file = '../Simulations/sim_data/sim_output/pCa_analysis.xlsx';
+output_image_file = '../output/test_all_1';
 output_image_types = {'png', 'svg', 'eps'};
 
 % Display 

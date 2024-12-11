@@ -20,7 +20,7 @@
             "state": 1, 
             "transition": 1, 
             "parameter_number": 1, 
-            "multipliers": [1.9, 1.9],
+            "multipliers": [0.8, 1.5],
             "output_type": "float"
           },
           {
@@ -29,7 +29,7 @@
             "state": 1, 
             "transition": 1, 
             "parameter_number": 1, 
-            "multipliers": [ 0.01, 0.8],
+            "multipliers": [ 0.01, 2],
             "output_type": "float"
           },
           {
@@ -44,7 +44,7 @@
             "state": 1, 
             "transition": 1, 
             "parameter_number": 2, 
-            "multipliers": [1.1, 1.1],
+            "multipliers": [1.0, 1.0],
             "output_type": "float"
           },
           {
@@ -53,7 +53,7 @@
             "state": 1, 
             "transition": 1, 
             "parameter_number": 2, 
-            "multipliers": [ 1.0, 1.1],
+            "multipliers": [ 1.0, 1.0],
             "output_type": "float"
           }
         ]
@@ -65,7 +65,7 @@
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
         "m_n": 4,
-        "randomized_repeats": 5, 
+        "randomized_repeats": 2, 
         "hs_lengths": [950, 1150],
         "pCa_values": [9, 6.5, 6.3, 6.1, 5.9, 5.7, 5.5, 5.3, 5.0, 4.5],
         "sim_duration_s": 4.0,

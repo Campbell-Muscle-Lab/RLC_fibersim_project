@@ -16,7 +16,7 @@
     {
         "relative_to": "this_file",
         "status_folder": "status_dumps",
-        "time_steps": "1:10:500"
+        "time_steps": "1:100:500"
     }
   }
 }
