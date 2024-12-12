@@ -20,7 +20,7 @@
             "state": 1, 
             "transition": 1, 
             "parameter_number": 1, 
-            "multipliers": [1.0, 1.0],
+            "multipliers": [1.0],
             "output_type": "float"
           },
           {
@@ -29,13 +29,13 @@
             "state": 1, 
             "transition": 1, 
             "parameter_number": 2, 
-            "multipliers": [1.0, 1.0],
+            "multipliers": [10],
             "output_type": "float"
           },
           {
             "class": "thin_parameters",
             "variable": "a_k_coop",
-            "multipliers": [1.0, 1.0],
+            "multipliers": [0.9],
             "output_type": "float"
           }
         ]
