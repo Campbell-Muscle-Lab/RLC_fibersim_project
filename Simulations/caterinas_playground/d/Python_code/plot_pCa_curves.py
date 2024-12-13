@@ -166,6 +166,11 @@ def plot_pCa_curves_isotypes():
     # Get the default colors
     color_map = [p['color'] for p in plt.rcParams['axes.prop_cycle']]
     
+    # Set the formatting
+    formatting = {'marker_symbols': ['o','s','o', 's'],
+                  'color_set': [color_map[1], color_map[1],
+                                color_map[2], color_map[2]]}
+    
     for i in range(no_of_comparisons):
         test_abs_pd = []
         test_norm_pd = []
@@ -173,9 +178,10 @@ def plot_pCa_curves_isotypes():
             test_abs_pd.append(abs_data[j])
             test_norm_pd.append(norm_data[j])
         
-        anal.plot_y_pCa_data(test_abs_pd, ax=ax[i])
+        anal.plot_y_pCa_data(test_abs_pd, ax=ax[i],
+                             formatting_overrides=formatting)
         anal.plot_y_pCa_data(test_norm_pd, ax = ax[i+no_of_comparisons],
-                             y_ticks=[0, 1])
+                             y_ticks=[0, 1], formatting_overrides=formatting)
         
     # Save fig
     output_file_string = os.path.join(top_data_folder, 'curve_comparison.png')
