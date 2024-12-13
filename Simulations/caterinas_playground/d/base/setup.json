@@ -1,0 +1,55 @@
+{
+  "FiberSim_setup": {
+    "FiberCpp_exe": {
+      "relative_to": "this_file",
+      "exe_file": "d:/ken/github/campbellmusclelab/models/FiberSim/bin/FiberCpp.exe"
+    },
+    "model":
+    {
+      "relative_to": "this_file",
+      "options_file": "sim_options.json",
+      "isotype_clones":
+      {
+          "additional_m_isotypes": 1
+      },
+      "manipulations": 
+      {
+        "base_model":"model.json",
+        "generated_folder": "../generated/",
+        "adjustments":
+        [
+          {
+            "variable": "m_isotype_profiles",
+            "profile": ["all_1", "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1"]
+          },
+          {
+            "variable": "m_kinetics",
+            "isotype": 2,
+            "state": 1,
+            "transition": 1,
+            "parameter_number": 1,
+            "multipliers": [3, 3, 10]
+          }
+        ]
+      }
+    },
+    "characterization": [
+      {
+        "type": "pCa_length_control",
+        "relative_to": "this_file",
+        "sim_folder": "../sim_data",
+        "m_n": 36,
+        "randomized_repeats": 1, 
+        "hs_lengths": [950, 1150],
+        "pCa_values": [9, 6.5, 6.4, 6.3, 6.2, 6.1, 6.0, 5.9, 5.8, 5.7, 5.6, 5.5, 5.3, 5.1, 4.5],
+        "sim_duration_s": 0.8,
+        "time_step_s": 0.001,
+        "pCa_step_up_s": 0.05,
+        "output_image_formats": [ "png" ],
+        "figures_only": "False",
+        "trace_figures_on": "False",
+        "post_sim_Python_call": "../Python_code/plot_pCa_curves.py"
+      }
+    ]
+  }
+}
