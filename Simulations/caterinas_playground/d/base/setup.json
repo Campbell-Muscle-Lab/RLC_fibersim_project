@@ -2,7 +2,7 @@
   "FiberSim_setup": {
     "FiberCpp_exe": {
       "relative_to": "this_file",
-      "exe_file": "c:/ken/github/campbellmusclelab/models/FiberSim/bin/FiberCpp.exe"
+      "exe_file": "d:/ken/github/campbellmusclelab/models/FiberSim/bin/FiberCpp.exe"
     },
     "model":
     {
@@ -20,7 +20,9 @@
         [
           {
             "variable": "m_isotype_profiles",
-            "profile": ["all_1", "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1"]
+            "profile": ["all_1", "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1",
+                                    "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1",
+                                    "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1"]
           },
           {
             "variable": "m_kinetics",
@@ -28,7 +30,7 @@
             "state": 1,
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [1, 0.1, 10, 1, 1]
+            "multipliers": [1, 0.1, 10, 1, 1, 0.1, 10]
           },
           {
             "variable": "m_kinetics",
@@ -36,7 +38,7 @@
             "state": 1,
             "transition": 1,
             "parameter_number": 2,
-            "multipliers": [1, 1, 1, 0.1, 10]
+            "multipliers": [1, 1, 1, 0.1, 10, 10, 0.1]
           }
 
         ]
@@ -47,15 +49,15 @@
         "type": "pCa_length_control",
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
-        "m_n": 9,
+        "m_n": 100,
         "randomized_repeats": 1, 
         "hs_lengths": [950, 1150],
         "pCa_values": [9, 6.5, 6.4, 6.3, 6.2, 6.1, 6.0, 5.9, 5.8, 5.7, 5.6, 5.5, 5.3, 5.1, 4.5],
-        "sim_duration_s": 0.8,
+        "sim_duration_s": 1.0,
         "time_step_s": 0.001,
         "pCa_step_up_s": 0.05,
         "output_image_formats": [ "png" ],
-        "figures_only": "True",
+        "figures_only": "False",
         "trace_figures_on": "False",
         "post_sim_Python_call": "../Python_code/plot_pCa_curves.py"
       }

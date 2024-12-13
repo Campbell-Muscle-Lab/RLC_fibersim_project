@@ -122,9 +122,6 @@ def plot_pCa_curves_isotypes():
     for i in range(no_of_rows):
         for j in range(no_of_cols):
             ax.append(fig.add_subplot(spec[i,j]))
-    
-    # Get the default colors
-    color_map = [p['color'] for p in plt.rcParams['axes.prop_cycle']]
 
     for i in range(no_of_conditions):        
         anal.plot_y_pCa_data(abs_data[i], ax = ax[i], y_ticks=[0, max_force])
@@ -162,14 +159,11 @@ def plot_pCa_curves_isotypes():
     for i in range(no_of_rows):
         for j in range(no_of_cols):
             ax.append(fig.add_subplot(spec[i,j]))
-    
-    # Get the default colors
-    color_map = [p['color'] for p in plt.rcParams['axes.prop_cycle']]
-    
+   
     # Set the formatting
     formatting = {'marker_symbols': ['o','s','o', 's'],
-                  'color_set': [color_map[1], color_map[1],
-                                color_map[2], color_map[2]]}
+                  'color_set': ['orange', 'orange', 'purple', 'purple'],
+                  'fill_styles': ['full', 'none', 'full', 'none']}
     
     for i in range(no_of_comparisons):
         test_abs_pd = []
