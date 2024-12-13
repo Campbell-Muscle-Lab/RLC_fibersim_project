@@ -136,47 +136,49 @@ def plot_pCa_curves_isotypes():
     # Now make a new figure with comparisons
     
     # Work out how many comparisons there are
-    no_of_comparisons = int((no_of_conditions - 2) / 2)
+    no_of_comparisons = 1 + int((no_of_conditions - 2) / 2)
     
     # And what they are
     compar = []
+    vi= [0, 1]
+    compar.append(vi)
     for i in range(no_of_comparisons):
         vi = [0, 1, (2*(i+1)), (2*(i+1))+1]
         compar.append(vi)
-        
-    print(compar)
 
     # Now make the figure    
-    no_of_rows = 1
+    no_of_rows = 2
     no_of_cols = no_of_comparisons
         
     fig = plt.figure(constrained_layout = False)
     spec = gridspec.GridSpec(nrows = no_of_rows,
                              ncols = no_of_cols,
                              figure = fig,
-                             wspace = 1,
-                             hspace = 1)
+                             wspace = 0.5,
+                             hspace = 0.5)
     fig.set_size_inches([no_of_comparisons * 4, 6])
     
     ax = []
     for i in range(no_of_rows):
         for j in range(no_of_cols):
             ax.append(fig.add_subplot(spec[i,j]))
-            
-    print(ax)
     
     # Get the default colors
     color_map = [p['color'] for p in plt.rcParams['axes.prop_cycle']]
     
     for i in range(no_of_comparisons):
-        test_pd = []
+        test_abs_pd = []
+        test_norm_pd = []
         for j in compar[i]:
-            test_pd.append(norm_data[j])
-
-        anal.plot_y_pCa_data(test_pd, ax = ax[i], y_ticks=[0, 1])
+            test_abs_pd.append(abs_data[j])
+            test_norm_pd.append(norm_data[j])
+        
+        anal.plot_y_pCa_data(test_abs_pd, ax=ax[i])
+        anal.plot_y_pCa_data(test_norm_pd, ax = ax[i+no_of_comparisons],
+                             y_ticks=[0, 1])
         
     # Save fig
-    output_file_string = os.path.join(top_data_folder, 'norm_forces.png')
+    output_file_string = os.path.join(top_data_folder, 'curve_comparison.png')
     fig.savefig(output_file_string, bbox_inches='tight')
     
 if __name__ == "__main__":
