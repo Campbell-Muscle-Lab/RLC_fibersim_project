@@ -1,7 +1,7 @@
 /* SAS template for a 2 way analysis without a grouping variable */
 
 proc import out = work.all_data
-	datafile = "E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\..\output\Hill_curve_repeats_fixed.xlsx"
+	datafile = "E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\..\output\Hill_curve_repeats_fixed_3.xlsx"
 	dbms = xlsx replace;
 	sheet = "Sheet1";
 	getnames=yes;
@@ -15,9 +15,9 @@ proc print data=all_data;
 run;
 
 proc glimmix data=all_data;
-	class RLC_phosp hs_length;
-	model n_H = RLC_phosp hs_length RLC_phosp*hs_length /ddfm=satterthwaite;
-	lsmeans RLC_phosp hs_length RLC_phosp*hs_length /slice = RLC_phosp slice = hs_length slicediff=(RLC_phosp hs_length) pdiff adjust=tukey;
+	class hs_length RLC_phosp;
+	model pCa_50 = hs_length RLC_phosp hs_length*RLC_phosp /ddfm=satterthwaite;
+	lsmeans hs_length RLC_phosp hs_length*RLC_phosp /slice = hs_length slice = RLC_phosp slicediff=(hs_length RLC_phosp) pdiff adjust=tukey;
 run;
 
 ods listing;

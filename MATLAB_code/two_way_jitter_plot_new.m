@@ -7,29 +7,24 @@ addpath(genpath('../../MATLAB_Utilities'))
 addpath(genpath('../../MATLAB_SAS'))
 
 %Variables 
-data_file_string = '../output/Hill_curve_repeats_fixed.xlsx';
+data_file_string = '../output/Hill_curve_repeats_fixed_3.xlsx';
 results_file_string = 'sas_results/sas_results';
-y_axis_label = {'nH'}
+y_axis_label = {'pCa50'}
 sheet = "Sheet1"
-output_image_file = '../output/pCa50_jitter_nH';
+output_image_file = '../output/pCa50_Czone_22';
 output_image_types = {'png', 'svg', 'eps'};
-color_map = [0.8 0 1 ; 1 0.6 0 ; 0.8 0 1; 1 0.6 0; ...
-             1 0.7 0.3 ; 0.8 0 1; 0 0.8 0.8; 0.8 0 1 ; 1 0.6 0 ; 0.8 0 1; 1 0.6 0; ...
-             1 0.7 0.3 ; 0.8 0 1; 0 0.8 0.8]
- y_ticks = [2 8]
-
-
-
+color_map = [1 0.6 0; 0.8 0 1 ]
+y_ticks = [5.4 6.1]
 
 % Pull data
 d = readtable(data_file_string)
 
 % Define the variables to plot on the y axis 
-test_variable = 'n_H'
+test_variable = 'pCa_50'
 
 % Define the variables on the X axis 
-factor_1 = 'RLC_phosp'
-factor_2 = 'hs_length'
+factor_2 = 'RLC_phosp'
+factor_1 = 'hs_length'
 
 % Get it into format for jitter plot 
 [od, jd] = extract_two_way_data( ...
