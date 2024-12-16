@@ -5,12 +5,14 @@ function pCa_values_mean_error
 addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
-xls_file = '../simulations/sim_data/sim_output/pCa_analysis.xlsx';
-output_image_file = '../output/test_2_13';
+xls_file = '../data/d_100fil/pCa_analysis_fixed.xlsx';
+output_image_file = '../output/all_1_1';
 output_image_types = {'png', 'svg', 'eps'};
+
 
 % Display 
  color_map = [0.8 0 1 ; 1 0.6 0 ; 0.8 0 1; 1 0.6 0; ...
+             1 0.7 0.3 ; 0.8 0 1; 0 0.8 0.8; 0.8 0 1 ; 1 0.6 0 ; 0.8 0 1; 1 0.6 0; ...
              1 0.7 0.3 ; 0.8 0 1; 0 0.8 0.8]
 % Code 
 % Figure layout
@@ -30,20 +32,21 @@ sp = initialise_publication_quality_figure(...
 
 % Read excel sheet 
 d = readtable(xls_file) 
-% Define needed files 
 
+% Define needed files 
 curve_id = unique(d.curve)
 pCa = unique(d.hs_pCa)
 hsl_values = unique(d.hs_length)
+
 % Loop through files 
-num_of_trials = 5 
+num_of_trials = 10
 m = 1 
-for i = 1:numel(curve_id)
-    vi = find(d.curve == i)
+for i = 1 : numel(curve_id)
+    vi = find(d.curve==i)
 
     for k = 1 : num_of_trials
 
-        d(vi(k:5:end),:).hs_force = d(vi(k:5:end),:).hs_force./d(vi(k),:).hs_force
+        d(vi(k:10:end),:).hs_force = d(vi(k:10:end),:).hs_force./d(vi(k),:).hs_force
 
     end
 
@@ -88,7 +91,7 @@ h = plot_pCa_data_with_y_errors(r,...
     'y_ticks', [0 1.1],...
     'y_label_offset', -0.05, ...
     'marker_symbols',{'o','o','^','^'},...
-    'marker_size', 7,...
+    'marker_size', 8,...
     'marker_face_colors', color_map, ...
     'y_axis_offset', -0.03, ...
     'title_y_offset', 0, ...

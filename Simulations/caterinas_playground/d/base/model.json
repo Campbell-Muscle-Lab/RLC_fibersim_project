@@ -41,7 +41,7 @@
     "a_k_stiff": 2,
     "a_k_on": 2e7,
     "a_k_off": 100,
-    "a_k_coop": 10
+    "a_k_coop": 55
   },
   "thick_parameters": {
     "m_k_stiff": 5 },
@@ -73,7 +73,7 @@
             {
               "new_state": 2,
               "rate_type": "force_dependent",
-              "rate_parameters": [ 10, 20 ]
+              "rate_parameters": [ 10, 0.30 ]
             }
           ]
         },

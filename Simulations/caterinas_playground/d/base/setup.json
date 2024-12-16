@@ -2,7 +2,7 @@
   "FiberSim_setup": {
     "FiberCpp_exe": {
       "relative_to": "this_file",
-      "exe_file": "d:/ken/github/campbellmusclelab/models/FiberSim/bin/FiberCpp.exe"
+      "exe_file": "E:/caterina/GitHub/FiberSim/bin/FiberCpp.exe"
     },
     "model":
     {
@@ -20,9 +20,8 @@
         [
           {
             "variable": "m_isotype_profiles",
-            "profile": ["all_1", "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1",
-                                    "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1",
-                                    "p_1_1_c_2_2_2_2_2_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1"]
+            "profile": ["all_1", "p_1_1_c_1_2_1_2_1_2_d_1_1", "p_1_1_c_2_2_2_2_2_2_d_1_1",
+                                 "p_1_2_c_1_2_1_2_1_2_d_1_2"]
           },
           {
             "variable": "m_kinetics",
@@ -30,7 +29,7 @@
             "state": 1,
             "transition": 1,
             "parameter_number": 1,
-            "multipliers": [1, 0.1, 10, 1, 1, 0.1, 10]
+            "multipliers": [1, 1, 1, 1]
           },
           {
             "variable": "m_kinetics",
@@ -38,7 +37,7 @@
             "state": 1,
             "transition": 1,
             "parameter_number": 2,
-            "multipliers": [1, 1, 1, 0.1, 10, 10, 0.1]
+            "multipliers": [1, 1000, 1000, 1000]
           }
 
         ]
@@ -49,8 +48,7 @@
         "type": "pCa_length_control",
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
-        "m_n": 100,
-        "randomized_repeats": 1, 
+        "m_n": 100, 
         "hs_lengths": [950, 1150],
         "pCa_values": [9, 6.5, 6.4, 6.3, 6.2, 6.1, 6.0, 5.9, 5.8, 5.7, 5.6, 5.5, 5.3, 5.1, 4.5],
         "sim_duration_s": 1.0,

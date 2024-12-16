@@ -1,4 +1,4 @@
-1                                           The SAS System              16:07 Monday, December 9, 2024
+1                                           The SAS System             12:45 Monday, December 16, 2024
 
 NOTE: Copyright (c) 2023 by SAS Institute Inc., Cary, NC, USA. 
 NOTE: SAS (r) Proprietary Software 9.4 (TS1M8) 
@@ -20,15 +20,15 @@ NOTE: Additional host information:
  X64_WIN+PRO WIN 10.0.22631  Workstation
 
 NOTE: SAS initialization used:
-      real time           0.23 seconds
-      cpu time            0.00 seconds
+      real time           0.21 seconds
+      cpu time            0.01 seconds
       
 1          /* SAS template for a 2 way analysis without a grouping variable */
 2          
 3          proc import out = work.all_data
 4          	datafile =
-4        ! "E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\..\output\Hill_curve_repeats_test.xlsx
-4        ! "
+4        ! "E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\..\output\Hill_curve_repeats_fixed.xls
+4        ! x"
 5          	dbms = xlsx replace;
 6          	sheet = "Sheet1";
 7          	getnames=yes;
@@ -36,10 +36,10 @@ NOTE: SAS initialization used:
 
 NOTE: One or more variables were converted because the data type is not supported by the V9 engine. 
       For more details, run with options MSGLEVEL=I.
-NOTE: The import data set has 20 observations and 9 variables.
+NOTE: The import data set has 40 observations and 9 variables.
 NOTE: WORK.ALL_DATA data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.01 seconds
+      real time           0.00 seconds
       cpu time            0.00 seconds
       
 
@@ -54,18 +54,18 @@ NOTE: Writing HTML Body file:
 14         	title1 'All data';
 15         run;
 
-2                                           The SAS System              16:07 Monday, December 9, 2024
+2                                           The SAS System             12:45 Monday, December 16, 2024
 
-NOTE: There were 20 observations read from the data set WORK.ALL_DATA.
+NOTE: There were 40 observations read from the data set WORK.ALL_DATA.
 NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.03 seconds
+      real time           0.02 seconds
       cpu time            0.00 seconds
       
 
 16         
 17         proc glimmix data=all_data;
 18         	class RLC_phosp hs_length;
-19         	model pCa_50 = RLC_phosp hs_length RLC_phosp*hs_length /ddfm=satterthwaite;
+19         	model n_H = RLC_phosp hs_length RLC_phosp*hs_length /ddfm=satterthwaite;
 20         	lsmeans RLC_phosp hs_length RLC_phosp*hs_length /slice = RLC_phosp slice = hs_length
 20       ! slicediff=(RLC_phosp hs_length) pdiff adjust=tukey;
 21         run;
@@ -75,8 +75,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
 
 NOTE: No optimization performed.
 NOTE: PROCEDURE GLIMMIX used (Total process time):
-      real time           0.09 seconds
-      cpu time            0.00 seconds
+      real time           0.07 seconds
+      cpu time            0.04 seconds
       
 
 22         
@@ -87,5 +87,5 @@ NOTE: PROCEDURE GLIMMIX used (Total process time):
 NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
 NOTE: The SAS System used:
       real time           0.54 seconds
-      cpu time            0.01 seconds
+      cpu time            0.09 seconds
       
