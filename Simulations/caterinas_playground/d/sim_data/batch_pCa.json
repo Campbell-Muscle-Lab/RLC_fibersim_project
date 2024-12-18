@@ -41,6 +41,41 @@
             },
             {
                 "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\prot_pCa_45_s_0_r6.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\1\\sim_pCa_45_s_0_r6.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\sim_options_1_r6.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\prot_pCa_45_s_0_r7.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\1\\sim_pCa_45_s_0_r7.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\sim_options_1_r7.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\prot_pCa_45_s_0_r8.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\1\\sim_pCa_45_s_0_r8.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\sim_options_1_r8.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\prot_pCa_45_s_0_r9.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\1\\sim_pCa_45_s_0_r9.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\sim_options_1_r9.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\prot_pCa_45_s_0_r10.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\1\\sim_pCa_45_s_0_r10.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\1\\sim_options_1_r10.json"
+            },
+            {
+                "relative_to": "False",
                 "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\prot_pCa_45_s_0_r1.txt",
                 "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r1.txt",
                 "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
@@ -73,6 +108,41 @@
                 "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r5.txt",
                 "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
                 "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\sim_options_1_r5.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\prot_pCa_45_s_0_r6.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r6.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\sim_options_1_r6.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\prot_pCa_45_s_0_r7.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r7.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\sim_options_1_r7.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\prot_pCa_45_s_0_r8.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r8.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\sim_options_1_r8.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\prot_pCa_45_s_0_r9.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r9.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\sim_options_1_r9.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\prot_pCa_45_s_0_r10.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\2\\sim_pCa_45_s_0_r10.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\model_1.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\2\\sim_options_1_r10.json"
             },
             {
                 "relative_to": "False",
@@ -111,6 +181,41 @@
             },
             {
                 "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\prot_pCa_45_s_0_r6.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\3\\sim_pCa_45_s_0_r6.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\sim_options_1_r6.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\prot_pCa_45_s_0_r7.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\3\\sim_pCa_45_s_0_r7.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\sim_options_1_r7.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\prot_pCa_45_s_0_r8.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\3\\sim_pCa_45_s_0_r8.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\sim_options_1_r8.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\prot_pCa_45_s_0_r9.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\3\\sim_pCa_45_s_0_r9.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\sim_options_1_r9.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\prot_pCa_45_s_0_r10.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\3\\sim_pCa_45_s_0_r10.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\3\\sim_options_1_r10.json"
+            },
+            {
+                "relative_to": "False",
                 "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\prot_pCa_45_s_0_r1.txt",
                 "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r1.txt",
                 "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
@@ -143,6 +248,41 @@
                 "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r5.txt",
                 "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
                 "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\sim_options_1_r5.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\prot_pCa_45_s_0_r6.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r6.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\sim_options_1_r6.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\prot_pCa_45_s_0_r7.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r7.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\sim_options_1_r7.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\prot_pCa_45_s_0_r8.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r8.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\sim_options_1_r8.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\prot_pCa_45_s_0_r9.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r9.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\sim_options_1_r9.json"
+            },
+            {
+                "relative_to": "False",
+                "protocol_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\prot_pCa_45_s_0_r10.txt",
+                "results_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_output\\4\\sim_pCa_45_s_0_r10.txt",
+                "model_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\model_2.json",
+                "options_file": "E:\\caterina\\GitHub\\RLC_fibersim_project\\Simulations\\caterinas_playground\\d\\sim_data\\sim_input\\4\\sim_options_1_r10.json"
             }
         ],
         "batch_figures": {

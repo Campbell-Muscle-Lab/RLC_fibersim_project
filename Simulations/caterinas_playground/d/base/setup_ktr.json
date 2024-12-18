@@ -48,7 +48,7 @@
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
         "m_n": 64, 
-        "randomized_repeats": 5, 
+        "randomized_repeats": 10, 
         "hs_lengths": [950, 1150],
         "pCa_values": [4.5],
         "sim_duration_s": 2.0,
