@@ -1,5 +1,12 @@
-1                                           The SAS System             17:18 Monday, December 16, 2024
+1                                                          The SAS System                         11:59 Wednesday, December 18, 2024
 
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
 NOTE: Copyright (c) 2023 by SAS Institute Inc., Cary, NC, USA. 
 NOTE: SAS (r) Proprietary Software 9.4 (TS1M8) 
       Licensed to UNIVERSITY OF KENTUCKY - SFA T&R, Site 70080112.
@@ -27,8 +34,7 @@ NOTE: SAS initialization used:
 2          
 3          proc import out = work.all_data
 4          	datafile =
-4        ! "E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\..\output\Hill_curve_repeats_fixed_3.x
-4        ! lsx"
+4        ! "E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\..\output\k_tr_analysis_fixed.xlsx"
 5          	dbms = xlsx replace;
 6          	sheet = "Sheet1";
 7          	getnames=yes;
@@ -36,7 +42,7 @@ NOTE: SAS initialization used:
 
 NOTE: One or more variables were converted because the data type is not supported by the V9 engine. 
       For more details, run with options MSGLEVEL=I.
-NOTE: The import data set has 40 observations and 9 variables.
+NOTE: The import data set has 20 observations and 7 variables.
 NOTE: WORK.ALL_DATA data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
       real time           0.00 seconds
@@ -48,24 +54,24 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 10       ! file="E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\sas_results\sas_results.html";
 NOTE: Writing HTML Body file: 
       E:\caterina\GitHub\RLC_fibersim_project\MATLAB_code\sas_results\sas_results.html
+2                                           The SAS System          11:59 Wednesday, December 18, 2024
+
 11         ods listing close;
 12         
 13         proc print data=all_data;
 14         	title1 'All data';
 15         run;
 
-2                                           The SAS System             17:18 Monday, December 16, 2024
-
-NOTE: There were 40 observations read from the data set WORK.ALL_DATA.
+NOTE: There were 20 observations read from the data set WORK.ALL_DATA.
 NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.03 seconds
+      real time           0.02 seconds
       cpu time            0.00 seconds
       
 
 16         
 17         proc glimmix data=all_data;
 18         	class hs_length RLC_phosp;
-19         	model pCa_50 = hs_length RLC_phosp hs_length*RLC_phosp /ddfm=satterthwaite;
+19         	model k_tr = hs_length RLC_phosp hs_length*RLC_phosp /ddfm=satterthwaite;
 20         	lsmeans hs_length RLC_phosp hs_length*RLC_phosp /slice = hs_length slice = RLC_phosp
 20       ! slicediff=(hs_length RLC_phosp) pdiff adjust=tukey;
 21         run;
@@ -75,8 +81,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
 
 NOTE: No optimization performed.
 NOTE: PROCEDURE GLIMMIX used (Total process time):
-      real time           0.10 seconds
-      cpu time            0.03 seconds
+      real time           0.08 seconds
+      cpu time            0.01 seconds
       
 
 22         
@@ -86,6 +92,6 @@ NOTE: PROCEDURE GLIMMIX used (Total process time):
 
 NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
 NOTE: The SAS System used:
-      real time           0.55 seconds
-      cpu time            0.04 seconds
+      real time           0.53 seconds
+      cpu time            0.03 seconds
       

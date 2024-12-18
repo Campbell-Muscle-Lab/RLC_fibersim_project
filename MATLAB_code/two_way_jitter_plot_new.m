@@ -85,9 +85,9 @@ stat_lines('line_data', stat_line_data)
 
 
 % Output
-for type_counter = 1 : numel(output_image_types)
-    figure_export( ...
-        'output_file_string', output_image_file, ...
-        'output_type', output_image_types{type_counter});
-end
+% for type_counter = 1 : numel(output_image_types)
+%     figure_export( ...
+%         'output_file_string', output_image_file, ...
+%         'output_type', output_image_types{type_counter});
+% end
 
