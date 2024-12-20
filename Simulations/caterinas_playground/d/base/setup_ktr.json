@@ -14,13 +14,13 @@
       },
       "manipulations": 
       {
-        "base_model":"model.json",
+        "base_model":"model_ktr.json",
         "generated_folder": "../generated/",
         "adjustments":
         [
           {
             "variable": "m_isotype_profiles",
-            "profile": ["all_1", "p_1_1_c_1_2_1_2_1_2_d_1_1"]
+            "profile": ["all_1", "p_1_1_c_1_2_1_2_1_2_d_1_1" ]
           },
           {
             "variable": "m_kinetics",
@@ -38,7 +38,6 @@
             "parameter_number": 2,
             "multipliers": [1, 1000, 1000, 1000]
           }
-
         ]
       }
     },
@@ -47,10 +46,10 @@
         "type": "pCa_length_control",
         "relative_to": "this_file",
         "sim_folder": "../sim_data",
-        "m_n": 64, 
-        "randomized_repeats": 10, 
+        "m_n": 4, 
+        "randomized_repeats": 5, 
         "hs_lengths": [950, 1150],
-        "pCa_values": [4.5],
+        "pCa_values": [9, 6.5, 6.2, 6.0, 5.9, 5.8, 5.5, 4.5],
         "sim_duration_s": 2.0,
         "time_step_s": 0.001,
         "pCa_step_up_s": 0.05,

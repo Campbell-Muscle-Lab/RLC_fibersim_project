@@ -7,20 +7,20 @@ addpath(genpath('../../MATLAB_Utilities'))
 addpath(genpath('../../MATLAB_SAS'))
 
 %Variables 
-data_file_string = '../output/Hill_curve_repeats_fixed_3.xlsx';
+data_file_string = '../output/k_tr_analysis_fixed.xlsx';
 results_file_string = 'sas_results/sas_results';
-y_axis_label = {'pCa50'}
+y_axis_label = {'k_tr'}
 sheet = "Sheet1"
-output_image_file = '../output/pCa50_Czone_22';
+output_image_file = '../output/k_tr_Czone_12';
 output_image_types = {'png', 'svg', 'eps'};
 color_map = [1 0.6 0; 0.8 0 1 ]
-y_ticks = [5.4 6.1]
+y_ticks = [15 35]
 
 % Pull data
 d = readtable(data_file_string)
 
 % Define the variables to plot on the y axis 
-test_variable = 'pCa_50'
+test_variable = 'k_tr'
 
 % Define the variables on the X axis 
 factor_2 = 'RLC_phosp'
@@ -45,8 +45,6 @@ stats = sas_two_way_anova_without_grouping( ...
 p_string = write_p_table_to_string(stats.p_table)
 vi = regexp(p_string,'\n')
 title_string = p_string(1:vi(3)-1);
-
-
 
 % Make a figure
 sp = initialise_publication_quality_figure( ...
@@ -85,9 +83,9 @@ stat_lines('line_data', stat_line_data)
 
 
 % Output
-% for type_counter = 1 : numel(output_image_types)
-%     figure_export( ...
-%         'output_file_string', output_image_file, ...
-%         'output_type', output_image_types{type_counter});
-% end
+for type_counter = 1 : numel(output_image_types)
+    figure_export( ...
+        'output_file_string', output_image_file, ...
+        'output_type', output_image_types{type_counter});
+end
 
