@@ -5,7 +5,7 @@ function pCa_values_mean_error
 addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
-xls_file = '../Simulations/caterinas_playground/d/sim_data/sim_output/';
+xls_file = '../data/d_100fil/pCa_analysis_fixed_3';
 output_image_file = '../output/all_1_2';
 output_image_types = {'png', 'svg', 'eps'};
 
@@ -15,7 +15,7 @@ output_image_types = {'png', 'svg', 'eps'};
 % Code 
 % Figure layout
 no_of_cols = 1
-no_of_rows = 1 
+no_of_rows = 1  
 
 sp = initialise_publication_quality_figure(...
     'no_of_panels_wide', no_of_cols,...
@@ -107,12 +107,12 @@ legendflex(h, leg_labels, ...
     'FontSize',8, ...
     'text_y_padding', -5);
 
-% Output
-for type_counter = 1 : numel(output_image_types)
-    figure_export( ...
-        'output_file_string', output_image_file, ...
-        'output_type', output_image_types{type_counter});
-end
+% % Output
+% for type_counter = 1 : numel(output_image_types)
+%     figure_export( ...
+%         'output_file_string', output_image_file, ...
+%         'output_type', output_image_types{type_counter});
+% end
 
 
 

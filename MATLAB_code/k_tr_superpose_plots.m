@@ -12,7 +12,7 @@ data_file_string = '../output/k_tr_analysis_fixed.xlsx';
 results_file_string = 'sas_results/sas_results';
 output_image_file= '../output/ktr_Czone_12';
 output_image_types = {'png', 'eps'};
-conditions_to_draw = [2, 4]
+conditions_to_draw = [1, 2]
 
 f_scaling_factor = 0.001
 
