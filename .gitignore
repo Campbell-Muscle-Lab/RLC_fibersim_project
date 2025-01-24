@@ -5,3 +5,7 @@
 **/output/*.png
 **/output/*.svg
 **/data/**/*.*
+**/threads/**/*.*
+**/progress/sim_input/**/*.*
+**/progress/sim_output/**/*.*
+!**/progress/sim_output/**/*.png
