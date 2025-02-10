@@ -2,7 +2,7 @@ function nodes_array
 % Function create an array for the nodes in FiberSim 
 
 % Variables
-v = [1;2]
+v = [1;1]
 v1 = [1;1]
 
 

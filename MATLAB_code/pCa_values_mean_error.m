@@ -5,7 +5,8 @@ function pCa_values_mean_error
 addpath(genpath('../../MATLAB_Utilities'))
 
 % Variables 
-xls_file = '../data/d_100fil/pCa_analysis_fixed_3';
+%xls_file = '../data/d_100fil/pCa_analysis_fixed_3';
+xls_file = '../Simulations/sim_data/sim_output/pCa_analysis'
 output_image_file = '../output/all_1_2';
 output_image_types = {'png', 'svg', 'eps'};
 
