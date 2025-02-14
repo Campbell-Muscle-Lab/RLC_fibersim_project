@@ -7,20 +7,20 @@ addpath(genpath('../../MATLAB_Utilities'))
 addpath(genpath('../../MATLAB_SAS'))
 
 %Variables 
-data_file_string = '../output/k_tr_analysis_fixed.xlsx';
+data_file_string = '../output/Hill_curve_repeats_noiso.xlsx';
 results_file_string = 'sas_results/sas_results';
-y_axis_label = {'k_tr'}
+y_axis_label = {'pCa_{50}'}
 sheet = "Sheet1"
-output_image_file = '../output/k_tr_Czone_12';
+output_image_file = '../output/noiso_pCa50';
 output_image_types = {'png', 'svg', 'eps'};
-color_map = [1 0.6 0; 0.8 0 1 ]
-y_ticks = [15 35]
+color_map = [0 0 0; 0.8 0 1 ]
+y_ticks = [5.4 6.1]
 
 % Pull data
 d = readtable(data_file_string)
 
 % Define the variables to plot on the y axis 
-test_variable = 'k_tr'
+test_variable = 'pCa_50'
 
 % Define the variables on the X axis 
 factor_2 = 'RLC_phosp'
@@ -45,6 +45,7 @@ stats = sas_two_way_anova_without_grouping( ...
 p_string = write_p_table_to_string(stats.p_table)
 vi = regexp(p_string,'\n')
 title_string = p_string(1:vi(3)-1);
+title_string = strrep(title_string,'_',' ')
 
 % Make a figure
 sp = initialise_publication_quality_figure( ...
@@ -68,7 +69,9 @@ jd_out = jitter_plot( ...
     'y_ticks', y_ticks,...
     'y_main_label_offset', 0.5,...
     'title', title_string, ...
-    'title_y_offset', 2)
+    'title_y_offset', 2,'marker_transparency',0.15,...
+    'marker_size',80,'mean_line_width',4,'mean_line_color',[0 0 0], ...
+    'sub_name_over_rides',{'No Phos.','Phos.';'No Phos.','Phos.'})
 
 % Now that you know the y ticks, calculate the stat lines
 % Pull out the stat lines
@@ -76,7 +79,7 @@ stat_line_data = return_stat_lines( ...
     '2way_LMM_without_grouping', ...
     stats.p_table, ...
     factor_1, factor_2, jd(1).f1_strings, jd(1).f2_strings, ...
-    jd_out.y_ticks)
+    jd_out.y_ticks,0.15)
 
 % Draw them
 stat_lines('line_data', stat_line_data)

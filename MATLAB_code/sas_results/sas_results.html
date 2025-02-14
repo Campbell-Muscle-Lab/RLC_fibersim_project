@@ -1651,6 +1651,8 @@ TD, TH {vertical-align: top }
 <col>
 <col>
 <col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr>
@@ -1658,10 +1660,12 @@ TD, TH {vertical-align: top }
 <th class="r header" scope="col">curve</th>
 <th class="l header" scope="col">RLC_phosp</th>
 <th class="l header" scope="col">hs_length</th>
-<th class="r header" scope="col">Force</th>
-<th class="r header" scope="col">k_tr</th>
-<th class="r header" scope="col">k_tr_amp</th>
-<th class="r header" scope="col">tr_r_squared</th>
+<th class="r header" scope="col">pCa_50</th>
+<th class="r header" scope="col">n_H</th>
+<th class="r header" scope="col">f_min</th>
+<th class="r header" scope="col">f_amp</th>
+<th class="r header" scope="col">f_max</th>
+<th class="r header" scope="col">r_sq</th>
 </tr>
 </thead>
 <tbody>
@@ -1670,400 +1674,480 @@ TD, TH {vertical-align: top }
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">38134.4</td>
-<td class="r data">23.559050397</td>
-<td class="r data">23405.497484</td>
-<td class="r data">0.9811547732</td>
+<td class="r data">5.6133020937</td>
+<td class="r data">3.7105538433</td>
+<td class="r data">239.80261358</td>
+<td class="r data">32976.122409</td>
+<td class="r data">33215.925023</td>
+<td class="r data">0.999821004</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">2</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">36874.1</td>
-<td class="r data">25.938723079</td>
-<td class="r data">23693.184346</td>
-<td class="r data">0.9842419232</td>
+<td class="r data">5.6083441973</td>
+<td class="r data">3.4713374703</td>
+<td class="r data">198.97939867</td>
+<td class="r data">33416.153963</td>
+<td class="r data">33615.133362</td>
+<td class="r data">0.999581537</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">3</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">37517</td>
-<td class="r data">27.212099043</td>
-<td class="r data">23831.369086</td>
-<td class="r data">0.9822126331</td>
+<td class="r data">5.5942241636</td>
+<td class="r data">3.6192050588</td>
+<td class="r data">219.2438485</td>
+<td class="r data">33580.601231</td>
+<td class="r data">33799.845079</td>
+<td class="r data">0.999699718</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">4</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">37663.9</td>
-<td class="r data">28.190085722</td>
-<td class="r data">24431.371609</td>
-<td class="r data">0.9864591817</td>
+<td class="r data">5.5969055804</td>
+<td class="r data">3.4958897092</td>
+<td class="r data">236.03339072</td>
+<td class="r data">33232.175587</td>
+<td class="r data">33468.208978</td>
+<td class="r data">0.9996879382</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">5</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">38013.2</td>
-<td class="r data">26.629048769</td>
-<td class="r data">24430.886681</td>
-<td class="r data">0.9810897738</td>
+<td class="r data">5.6023033714</td>
+<td class="r data">3.7448001744</td>
+<td class="r data">258.44082406</td>
+<td class="r data">32976.539963</td>
+<td class="r data">33234.980787</td>
+<td class="r data">0.9998114776</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">6</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">37475.1</td>
-<td class="r data">26.090812959</td>
-<td class="r data">22581.592435</td>
-<td class="r data">0.9716443555</td>
+<td class="r data">5.6105651786</td>
+<td class="r data">3.464169814</td>
+<td class="r data">171.93935209</td>
+<td class="r data">33017.859066</td>
+<td class="r data">33189.798418</td>
+<td class="r data">0.9996694533</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">7</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">36806.1</td>
-<td class="r data">25.317709071</td>
-<td class="r data">23441.936236</td>
-<td class="r data">0.9820441011</td>
+<td class="r data">5.6131420391</td>
+<td class="r data">3.6253902524</td>
+<td class="r data">263.26634291</td>
+<td class="r data">33242.575706</td>
+<td class="r data">33505.842049</td>
+<td class="r data">0.9995014487</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">8</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">37227.6</td>
-<td class="r data">27.577853446</td>
-<td class="r data">24424.032062</td>
-<td class="r data">0.9804890571</td>
+<td class="r data">5.61395121</td>
+<td class="r data">3.5534603505</td>
+<td class="r data">175.15162924</td>
+<td class="r data">32862.656959</td>
+<td class="r data">33037.808588</td>
+<td class="r data">0.9989334195</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">9</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">37153.2</td>
-<td class="r data">25.185808504</td>
-<td class="r data">24594.340937</td>
-<td class="r data">0.9748928147</td>
+<td class="r data">5.6065954072</td>
+<td class="r data">3.3218095548</td>
+<td class="r data">98.886948691</td>
+<td class="r data">33569.588711</td>
+<td class="r data">33668.47566</td>
+<td class="r data">0.9993602991</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">10</th>
 <td class="r data">1</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">38282.7</td>
-<td class="r data">27.812095728</td>
-<td class="r data">25376.576793</td>
-<td class="r data">0.9808238413</td>
+<td class="r data">5.6001373709</td>
+<td class="r data">3.6235754662</td>
+<td class="r data">285.89770844</td>
+<td class="r data">33143.791671</td>
+<td class="r data">33429.68938</td>
+<td class="r data">0.9994744259</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">11</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48471.6</td>
-<td class="r data">16.619035587</td>
-<td class="r data">26446.356174</td>
-<td class="r data">0.9710159948</td>
+<td class="r data">5.7508852029</td>
+<td class="r data">4.0589002406</td>
+<td class="r data">1551.0806069</td>
+<td class="r data">36780.093872</td>
+<td class="r data">38331.174479</td>
+<td class="r data">0.99960693</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">12</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">46365.2</td>
-<td class="r data">19.355840068</td>
-<td class="r data">26862.408311</td>
-<td class="r data">0.9543119316</td>
+<td class="r data">5.7524832186</td>
+<td class="r data">3.9883668165</td>
+<td class="r data">1505.311463</td>
+<td class="r data">36581.578344</td>
+<td class="r data">38086.889807</td>
+<td class="r data">0.999833476</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">13</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">47249.7</td>
-<td class="r data">19.007044494</td>
-<td class="r data">27760.309568</td>
-<td class="r data">0.97901473</td>
+<td class="r data">5.7554589828</td>
+<td class="r data">4.1318400766</td>
+<td class="r data">1476.9633782</td>
+<td class="r data">36501.639245</td>
+<td class="r data">37978.602623</td>
+<td class="r data">0.999782603</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">14</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48139</td>
-<td class="r data">18.335033394</td>
-<td class="r data">26633.988289</td>
-<td class="r data">0.9741241021</td>
+<td class="r data">5.7456607858</td>
+<td class="r data">3.9414333897</td>
+<td class="r data">1491.9817691</td>
+<td class="r data">36924.617948</td>
+<td class="r data">38416.599717</td>
+<td class="r data">0.9997742672</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">15</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">47819.4</td>
-<td class="r data">21.274022399</td>
-<td class="r data">27459.573553</td>
-<td class="r data">0.9762872175</td>
+<td class="r data">5.7452158797</td>
+<td class="r data">3.870709396</td>
+<td class="r data">1374.3789328</td>
+<td class="r data">36817.224827</td>
+<td class="r data">38191.60376</td>
+<td class="r data">0.9997009472</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">16</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48466.8</td>
-<td class="r data">19.618064806</td>
-<td class="r data">27048.616017</td>
-<td class="r data">0.9838821902</td>
+<td class="r data">5.7491675413</td>
+<td class="r data">3.9128490124</td>
+<td class="r data">1499.3083308</td>
+<td class="r data">36741.178048</td>
+<td class="r data">38240.486379</td>
+<td class="r data">0.9998752631</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">17</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48114</td>
-<td class="r data">18.323468727</td>
-<td class="r data">27058.482889</td>
-<td class="r data">0.9746364936</td>
+<td class="r data">5.7492885176</td>
+<td class="r data">3.7557855553</td>
+<td class="r data">1446.7146677</td>
+<td class="r data">36823.126901</td>
+<td class="r data">38269.841568</td>
+<td class="r data">0.9998082994</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">18</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48828.8</td>
-<td class="r data">18.570820626</td>
-<td class="r data">27265.736863</td>
-<td class="r data">0.9799148814</td>
+<td class="r data">5.7549096446</td>
+<td class="r data">4.0870125583</td>
+<td class="r data">1497.2523149</td>
+<td class="r data">36554.941336</td>
+<td class="r data">38052.193651</td>
+<td class="r data">0.9997740016</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">19</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48051.3</td>
-<td class="r data">17.927590697</td>
-<td class="r data">27789.586385</td>
-<td class="r data">0.9777157537</td>
+<td class="r data">5.7528777787</td>
+<td class="r data">4.2365822004</td>
+<td class="r data">1628.6750776</td>
+<td class="r data">36353.228519</td>
+<td class="r data">37981.903597</td>
+<td class="r data">0.9994924077</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">20</th>
 <td class="r data">2</td>
 <td class="l data">No_Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">48114.2</td>
-<td class="r data">18.188787591</td>
-<td class="r data">26810.64775</td>
-<td class="r data">0.9745613466</td>
+<td class="r data">5.7480657425</td>
+<td class="r data">3.8322757449</td>
+<td class="r data">1442.1751534</td>
+<td class="r data">36650.658802</td>
+<td class="r data">38092.833955</td>
+<td class="r data">0.9998236634</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">21</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53463.7</td>
-<td class="r data">26.717475155</td>
-<td class="r data">35235.707173</td>
-<td class="r data">0.9839477488</td>
+<td class="r data">5.7028970411</td>
+<td class="r data">3.4235046485</td>
+<td class="r data">522.23939873</td>
+<td class="r data">36140.201939</td>
+<td class="r data">36662.441338</td>
+<td class="r data">0.9997003507</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">22</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53387.9</td>
-<td class="r data">28.254964929</td>
-<td class="r data">36090.997746</td>
-<td class="r data">0.9853540538</td>
+<td class="r data">5.6878935922</td>
+<td class="r data">3.3650601442</td>
+<td class="r data">579.93285774</td>
+<td class="r data">36840.250924</td>
+<td class="r data">37420.183782</td>
+<td class="r data">0.9998156217</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">23</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53384.1</td>
-<td class="r data">29.048080916</td>
-<td class="r data">36077.817622</td>
-<td class="r data">0.9900387481</td>
+<td class="r data">5.6892771217</td>
+<td class="r data">3.2712970965</td>
+<td class="r data">553.46386071</td>
+<td class="r data">36159.519206</td>
+<td class="r data">36712.983066</td>
+<td class="r data">0.9995085196</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">24</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53222.7</td>
-<td class="r data">28.363709932</td>
-<td class="r data">35586.864332</td>
-<td class="r data">0.9845878924</td>
+<td class="r data">5.6875374775</td>
+<td class="r data">3.5715421813</td>
+<td class="r data">724.09043686</td>
+<td class="r data">36519.432316</td>
+<td class="r data">37243.522753</td>
+<td class="r data">0.9992140376</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">25</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53670.3</td>
-<td class="r data">25.709095401</td>
-<td class="r data">34860.962738</td>
-<td class="r data">0.9802030613</td>
+<td class="r data">5.6885134399</td>
+<td class="r data">3.275797897</td>
+<td class="r data">519.79824515</td>
+<td class="r data">36733.979887</td>
+<td class="r data">37253.778132</td>
+<td class="r data">0.9998809351</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">26</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53870.6</td>
-<td class="r data">30.296241246</td>
-<td class="r data">35052.878895</td>
-<td class="r data">0.9861971397</td>
+<td class="r data">5.6929191661</td>
+<td class="r data">3.177858539</td>
+<td class="r data">542.87646638</td>
+<td class="r data">36345.841503</td>
+<td class="r data">36888.717969</td>
+<td class="r data">0.9997847264</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">27</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53570.6</td>
-<td class="r data">26.741529505</td>
-<td class="r data">35073.359269</td>
-<td class="r data">0.9859557576</td>
+<td class="r data">5.6942529332</td>
+<td class="r data">3.2644852043</td>
+<td class="r data">458.03657659</td>
+<td class="r data">36566.991824</td>
+<td class="r data">37025.0284</td>
+<td class="r data">0.9998979435</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">28</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">53717.6</td>
-<td class="r data">27.068659347</td>
-<td class="r data">34963.191537</td>
-<td class="r data">0.9840050898</td>
+<td class="r data">5.6930997783</td>
+<td class="r data">3.3595157579</td>
+<td class="r data">511.55384118</td>
+<td class="r data">36201.540578</td>
+<td class="r data">36713.094419</td>
+<td class="r data">0.9996209037</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">29</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">54176.5</td>
-<td class="r data">26.769763035</td>
-<td class="r data">35170.973947</td>
-<td class="r data">0.9875460968</td>
+<td class="r data">5.6906950622</td>
+<td class="r data">3.2215749549</td>
+<td class="r data">512.9361708</td>
+<td class="r data">36470.228234</td>
+<td class="r data">36983.164405</td>
+<td class="r data">0.9998182918</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">30</th>
 <td class="r data">3</td>
 <td class="l data">Phosp</td>
 <td class="l data">1.9um</td>
-<td class="r data">54138.2</td>
-<td class="r data">27.807467433</td>
-<td class="r data">34827.729137</td>
-<td class="r data">0.9810515619</td>
+<td class="r data">5.6926750821</td>
+<td class="r data">3.2143132199</td>
+<td class="r data">503.09169764</td>
+<td class="r data">36552.58182</td>
+<td class="r data">37055.673517</td>
+<td class="r data">0.9997919864</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">31</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65511.7</td>
-<td class="r data">25.009042317</td>
-<td class="r data">40306.53307</td>
-<td class="r data">0.9917369038</td>
+<td class="r data">5.8530387008</td>
+<td class="r data">3.8541779055</td>
+<td class="r data">1698.6916961</td>
+<td class="r data">38036.683018</td>
+<td class="r data">39735.374714</td>
+<td class="r data">0.9994918641</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">32</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65975.6</td>
-<td class="r data">24.658892416</td>
-<td class="r data">40747.565794</td>
-<td class="r data">0.9926626974</td>
+<td class="r data">5.8464040173</td>
+<td class="r data">3.539648786</td>
+<td class="r data">1697.0499389</td>
+<td class="r data">38064.434816</td>
+<td class="r data">39761.484755</td>
+<td class="r data">0.9995013428</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">33</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65034.3</td>
-<td class="r data">24.87044195</td>
-<td class="r data">40215.111793</td>
-<td class="r data">0.9911739356</td>
+<td class="r data">5.854711251</td>
+<td class="r data">3.743774451</td>
+<td class="r data">1788.2970873</td>
+<td class="r data">37841.703238</td>
+<td class="r data">39630.000325</td>
+<td class="r data">0.9989210429</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">34</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">64865.6</td>
-<td class="r data">23.309488244</td>
-<td class="r data">40183.986385</td>
-<td class="r data">0.9907491616</td>
+<td class="r data">5.8443949593</td>
+<td class="r data">3.7791584254</td>
+<td class="r data">1877.8334928</td>
+<td class="r data">38186.916141</td>
+<td class="r data">40064.749634</td>
+<td class="r data">0.998941341</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">35</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">64887.6</td>
-<td class="r data">23.764399013</td>
-<td class="r data">38743.951859</td>
-<td class="r data">0.9889920501</td>
+<td class="r data">5.840184464</td>
+<td class="r data">3.4917207336</td>
+<td class="r data">1751.9504978</td>
+<td class="r data">38211.092324</td>
+<td class="r data">39963.042821</td>
+<td class="r data">0.9993299571</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">36</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65211.1</td>
-<td class="r data">23.142619279</td>
-<td class="r data">39459.151948</td>
-<td class="r data">0.9917257415</td>
+<td class="r data">5.8472240463</td>
+<td class="r data">3.8044457356</td>
+<td class="r data">1775.0164525</td>
+<td class="r data">37933.742646</td>
+<td class="r data">39708.759098</td>
+<td class="r data">0.999437476</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">37</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65997.6</td>
-<td class="r data">24.527201717</td>
-<td class="r data">39769.75094</td>
-<td class="r data">0.9876281901</td>
+<td class="r data">5.8504561755</td>
+<td class="r data">3.5961930129</td>
+<td class="r data">1765.2225646</td>
+<td class="r data">38204.818842</td>
+<td class="r data">39970.041407</td>
+<td class="r data">0.9992186016</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">38</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">64449.7</td>
-<td class="r data">24.108374958</td>
-<td class="r data">39870.565477</td>
-<td class="r data">0.993081678</td>
+<td class="r data">5.8527829852</td>
+<td class="r data">3.5184240145</td>
+<td class="r data">1597.9027821</td>
+<td class="r data">38207.641066</td>
+<td class="r data">39805.543848</td>
+<td class="r data">0.9995822843</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">39</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65110.3</td>
-<td class="r data">25.381676338</td>
-<td class="r data">40862.462339</td>
-<td class="r data">0.9901732472</td>
+<td class="r data">5.8576366731</td>
+<td class="r data">3.7883087898</td>
+<td class="r data">1673.626786</td>
+<td class="r data">38137.64303</td>
+<td class="r data">39811.269816</td>
+<td class="r data">0.9994342719</td>
 </tr>
 <tr>
 <th class="r rowheader" scope="row">40</th>
 <td class="r data">4</td>
 <td class="l data">Phosp</td>
 <td class="l data">2.3um</td>
-<td class="r data">65227.7</td>
-<td class="r data">24.420389898</td>
-<td class="r data">39725.061023</td>
-<td class="r data">0.9858882158</td>
+<td class="r data">5.8585832044</td>
+<td class="r data">3.3851741535</td>
+<td class="r data">1509.4893584</td>
+<td class="r data">38400.911512</td>
+<td class="r data">39910.40087</td>
+<td class="r data">0.9992367621</td>
 </tr>
 </tbody>
 </table>
@@ -2100,7 +2184,7 @@ TD, TH {vertical-align: top }
 </tr>
 <tr>
 <th class="l rowheader" scope="row">Response Variable</th>
-<td class="l data">k_tr</td>
+<td class="l data">pCa_50</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">Response Distribution</th>
@@ -2284,35 +2368,35 @@ TD, TH {vertical-align: top }
 <tbody>
 <tr>
 <th class="l rowheader" scope="row">-2 Res Log Likelihood</th>
-<td class="r data">125.31</td>
+<td class="r data" nowrap>-263.57</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">AIC  (smaller is better)</th>
-<td class="r data">135.31</td>
+<td class="r data" nowrap>-253.57</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">AICC (smaller is better)</th>
-<td class="r data">137.31</td>
+<td class="r data" nowrap>-251.57</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">BIC  (smaller is better)</th>
-<td class="r data">143.23</td>
+<td class="r data" nowrap>-245.66</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">CAIC (smaller is better)</th>
-<td class="r data">148.23</td>
+<td class="r data" nowrap>-240.66</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">HQIC (smaller is better)</th>
-<td class="r data">138.08</td>
+<td class="r data" nowrap>-250.81</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">Pearson Chi-Square</th>
-<td class="r data">53.03</td>
+<td class="r data">0.00</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">Pearson Chi-Square / DF</th>
-<td class="r data">1.47</td>
+<td class="r data">0.00</td>
 </tr>
 </tbody>
 </table>
@@ -2349,22 +2433,22 @@ TD, TH {vertical-align: top }
 <th class="l rowheader" scope="row">hs_length</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">204.92</td>
+<td class="r data">7658.68</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">RLC_phosp</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">81.36</td>
+<td class="r data">2890.86</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">hs_length*RLC_phosp</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">30.96</td>
-<td class="r data">&lt;.0001</td>
+<td class="r data">16.61</td>
+<td class="r data">0.0002</td>
 </tr>
 </tbody>
 </table>
@@ -2401,18 +2485,18 @@ TD, TH {vertical-align: top }
 <tbody>
 <tr>
 <th class="l data">1.9um</th>
-<td class="r data">27.0145</td>
-<td class="r data">0.2714</td>
+<td class="r data">5.6490</td>
+<td class="r data">0.001224</td>
 <td class="r data">36</td>
-<td class="r data">99.55</td>
+<td class="r data">4614.44</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">2.3um</th>
-<td class="r data">21.5206</td>
-<td class="r data">0.2714</td>
+<td class="r data">5.8005</td>
+<td class="r data">0.001224</td>
 <td class="r data">36</td>
-<td class="r data">79.30</td>
+<td class="r data">4738.21</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 </tbody>
@@ -2455,10 +2539,10 @@ TD, TH {vertical-align: top }
 <tr>
 <th class="l data">1.9um</th>
 <th class="l data">2.3um</th>
-<td class="r data">5.4939</td>
-<td class="r data">0.3838</td>
+<td class="r data" nowrap>-0.1515</td>
+<td class="r data">0.001731</td>
 <td class="r data">36</td>
-<td class="r data">14.31</td>
+<td class="r data" nowrap>-87.51</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2497,18 +2581,18 @@ TD, TH {vertical-align: top }
 <tbody>
 <tr>
 <th class="l data">No_Phosp</th>
-<td class="r data">22.5366</td>
-<td class="r data">0.2714</td>
+<td class="r data">5.6782</td>
+<td class="r data">0.001224</td>
 <td class="r data">36</td>
-<td class="r data">83.05</td>
+<td class="r data">4638.31</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">Phosp</th>
-<td class="r data">25.9985</td>
-<td class="r data">0.2714</td>
+<td class="r data">5.7713</td>
+<td class="r data">0.001224</td>
 <td class="r data">36</td>
-<td class="r data">95.80</td>
+<td class="r data">4714.34</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 </tbody>
@@ -2551,10 +2635,10 @@ TD, TH {vertical-align: top }
 <tr>
 <th class="l data">No_Phosp</th>
 <th class="l data">Phosp</th>
-<td class="r data" nowrap>-3.4618</td>
-<td class="r data">0.3838</td>
+<td class="r data" nowrap>-0.09308</td>
+<td class="r data">0.001731</td>
 <td class="r data">36</td>
-<td class="r data" nowrap>-9.02</td>
+<td class="r data" nowrap>-53.77</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2596,37 +2680,37 @@ TD, TH {vertical-align: top }
 <tr>
 <th class="l data">1.9um</th>
 <th class="l data">No_Phosp</th>
-<td class="r data">26.3513</td>
-<td class="r data">0.3838</td>
+<td class="r data">5.6059</td>
+<td class="r data">0.001731</td>
 <td class="r data">36</td>
-<td class="r data">68.66</td>
+<td class="r data">3238.06</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">1.9um</th>
 <th class="l data">Phosp</th>
-<td class="r data">27.6777</td>
-<td class="r data">0.3838</td>
+<td class="r data">5.6920</td>
+<td class="r data">0.001731</td>
 <td class="r data">36</td>
-<td class="r data">72.12</td>
+<td class="r data">3287.75</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">2.3um</th>
 <th class="l data">No_Phosp</th>
-<td class="r data">18.7220</td>
-<td class="r data">0.3838</td>
+<td class="r data">5.7504</td>
+<td class="r data">0.001731</td>
 <td class="r data">36</td>
-<td class="r data">48.78</td>
+<td class="r data">3321.50</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">2.3um</th>
 <th class="l data">Phosp</th>
-<td class="r data">24.3193</td>
-<td class="r data">0.3838</td>
+<td class="r data">5.8505</td>
+<td class="r data">0.001731</td>
 <td class="r data">36</td>
-<td class="r data">63.37</td>
+<td class="r data">3379.34</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 </tbody>
@@ -2675,22 +2759,10 @@ TD, TH {vertical-align: top }
 <th class="l data">No_Phosp</th>
 <th class="l data">1.9um</th>
 <th class="l data">Phosp</th>
-<td class="r data" nowrap>-1.3264</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.08603</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data" nowrap>-2.44</td>
-<td class="r data">0.0196</td>
-<td class="r data">0.0868</td>
-</tr>
-<tr>
-<th class="l data">1.9um</th>
-<th class="l data">No_Phosp</th>
-<th class="l data">2.3um</th>
-<th class="l data">No_Phosp</th>
-<td class="r data">7.6294</td>
-<td class="r data">0.5428</td>
-<td class="r data">36</td>
-<td class="r data">14.06</td>
+<td class="r data" nowrap>-35.14</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2698,23 +2770,35 @@ TD, TH {vertical-align: top }
 <th class="l data">1.9um</th>
 <th class="l data">No_Phosp</th>
 <th class="l data">2.3um</th>
-<th class="l data">Phosp</th>
-<td class="r data">2.0321</td>
-<td class="r data">0.5428</td>
+<th class="l data">No_Phosp</th>
+<td class="r data" nowrap>-0.1445</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data">3.74</td>
-<td class="r data">0.0006</td>
-<td class="r data">0.0034</td>
+<td class="r data" nowrap>-59.00</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l data">1.9um</th>
+<th class="l data">No_Phosp</th>
+<th class="l data">2.3um</th>
+<th class="l data">Phosp</th>
+<td class="r data" nowrap>-0.2446</td>
+<td class="r data">0.002448</td>
+<td class="r data">36</td>
+<td class="r data" nowrap>-99.90</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">1.9um</th>
 <th class="l data">Phosp</th>
 <th class="l data">2.3um</th>
 <th class="l data">No_Phosp</th>
-<td class="r data">8.9557</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.05843</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data">16.50</td>
+<td class="r data" nowrap>-23.86</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2723,10 +2807,10 @@ TD, TH {vertical-align: top }
 <th class="l data">Phosp</th>
 <th class="l data">2.3um</th>
 <th class="l data">Phosp</th>
-<td class="r data">3.3584</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.1586</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data">6.19</td>
+<td class="r data" nowrap>-64.76</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2735,10 +2819,10 @@ TD, TH {vertical-align: top }
 <th class="l data">No_Phosp</th>
 <th class="l data">2.3um</th>
 <th class="l data">Phosp</th>
-<td class="r data" nowrap>-5.5973</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.1001</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data" nowrap>-10.31</td>
+<td class="r data" nowrap>-40.90</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2777,14 +2861,14 @@ TD, TH {vertical-align: top }
 <th class="l data">1.9um</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">5.97</td>
-<td class="r data">0.0196</td>
+<td class="r data">1234.61</td>
+<td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">2.3um</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">106.35</td>
+<td class="r data">1672.86</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 </tbody>
@@ -2822,14 +2906,14 @@ TD, TH {vertical-align: top }
 <th class="l data">No_Phosp</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">197.59</td>
+<td class="r data">3480.99</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l data">Phosp</th>
 <td class="r data">1</td>
 <td class="r data">36</td>
-<td class="r data">38.29</td>
+<td class="r data">4194.30</td>
 <td class="r data">&lt;.0001</td>
 </tr>
 </tbody>
@@ -2875,21 +2959,21 @@ TD, TH {vertical-align: top }
 <th class="l rowheader" scope="row">hs_length 1.9um</th>
 <th class="l data">No_Phosp</th>
 <th class="l data">Phosp</th>
-<td class="r data" nowrap>-1.3264</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.08603</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data" nowrap>-2.44</td>
-<td class="r data">0.0196</td>
-<td class="r data">0.0196</td>
+<td class="r data" nowrap>-35.14</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">&lt;.0001</td>
 </tr>
 <tr>
 <th class="l rowheader" scope="row">hs_length 2.3um</th>
 <th class="l data">No_Phosp</th>
 <th class="l data">Phosp</th>
-<td class="r data" nowrap>-5.5973</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.1001</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data" nowrap>-10.31</td>
+<td class="r data" nowrap>-40.90</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2936,10 +3020,10 @@ TD, TH {vertical-align: top }
 <th class="l rowheader" scope="row">RLC_phosp No_Phosp</th>
 <th class="l data">1.9um</th>
 <th class="l data">2.3um</th>
-<td class="r data">7.6294</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.1445</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data">14.06</td>
+<td class="r data" nowrap>-59.00</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
@@ -2947,10 +3031,10 @@ TD, TH {vertical-align: top }
 <th class="l rowheader" scope="row">RLC_phosp Phosp</th>
 <th class="l data">1.9um</th>
 <th class="l data">2.3um</th>
-<td class="r data">3.3584</td>
-<td class="r data">0.5428</td>
+<td class="r data" nowrap>-0.1586</td>
+<td class="r data">0.002448</td>
 <td class="r data">36</td>
-<td class="r data">6.19</td>
+<td class="r data" nowrap>-64.76</td>
 <td class="r data">&lt;.0001</td>
 <td class="r data">&lt;.0001</td>
 </tr>
